@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+// couleur des differentes cartes
+$profile-blue: hsl(246, 80%, 60%);
+$Light-red-work: hsl(15, 100%, 70%);
+$Soft-blue-play: hsl(195, 74%, 62%);
+$Light-red-study: hsl(348, 100%, 68%);
+$Lime-green-exercise: hsl(145, 58%, 55%);
+$Violet-social: hsl(264, 64%, 52%);
+$Soft-orange-self-care: hsl(43, 84%, 65%);
+html {
+  font-family: "Rubik", sans-serif;
+  body {
+    margin: 0;
+    padding: 0;
+    main {
+      background: hsl(226, 43%, 10%);
+      height: 1235px;
+      width: 375px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      section.profile {
+        margin-top: 105px;
+        .card.report-fort {
+          height: 203px;
+          width: 327px;
+          background-color: #1c204b;
+          border-radius: 15px;
+          .info-profile {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 133px;
+            background-color: $profile-blue;
+            border-radius: 15px;
+            img {
+              width: 64px;
+              height: 64px;
+              border: 3px solid white;
+              border-radius: 50px;
+            }
+            .name-report {
+              display: flex;
+              flex-direction: column;
+              p {
+                margin: 0;
+              }
+              & p:first-child {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 17.78px;
+                color: #bbc0ff;
+              }
+              & p:last-child {
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 28.44px;
+                color: #ffff;
+              }
+            }
+          }
+        }
+        ul.different-temps {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          list-style: none;
+          margin-top: 24px;
+
+          li {
+            button {
+              background: none;
+              border: none;
+              cursor: pointer;
+              color: #7078c9;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 21.33px;
+              text-align: center;
+            }
+          }
+        }
+      }
+      section.information-tracking {
+        .card-work {
+          width: 327px;
+          height: 160px;
+          background-color: $Light-red-work;
+          border-radius: 15px;
+          background-image: url(/images/icon-work.svg);
+          background-repeat: no-repeat;
+          background-position: right top;
+          display: flex;
+          align-items: flex-end;
+          justify-content: start;
+          margin: 0;
+          padding: 0;
+          #data {
+            width: 327px;
+            height: 122px;
+            background-color: #1c204b;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            #titre-data {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 279px;
+              height: 22px;
+              margin-bottom: 6px;
+
+              p {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21.33px;
+                margin: 0;
+              }
+            }
+            #data-timeframes {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              height: 38px;
+              width: 279px;
+              & p:first-child {
+                font-weight: 300;
+                font-size: 32px;
+                line-height: 37.92px;
+                margin: 0;
+              }
+              & p:last-child {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 17.78px;
+                text-align: right;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

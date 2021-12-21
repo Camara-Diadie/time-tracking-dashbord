@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+html {
+  font-family: "Rubik", sans-serif;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+}
+
+html body main {
+  background: #0f1424;
+  height: 1235px;
+  width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body main section.profile {
+  margin-top: 105px;
+}
+
+html body main section.profile .card.report-fort {
+  height: 203px;
+  width: 327px;
+  background-color: #1c204b;
+  border-radius: 15px;
+}
+
+html body main section.profile .card.report-fort .info-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 133px;
+  background-color: #5847eb;
+  border-radius: 15px;
+}
+
+html body main section.profile .card.report-fort .info-profile img {
+  width: 64px;
+  height: 64px;
+  border: 3px solid white;
+  border-radius: 50px;
+}
+
+html body main section.profile .card.report-fort .info-profile .name-report {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html body main section.profile .card.report-fort .info-profile .name-report p {
+  margin: 0;
+}
+
+html body main section.profile .card.report-fort .info-profile .name-report p:first-child {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17.78px;
+  color: #bbc0ff;
+}
+
+html body main section.profile .card.report-fort .info-profile .name-report p:last-child {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28.44px;
+  color: #ffff;
+}
+
+html body main section.profile ul.different-temps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  margin-top: 24px;
+}
+
+html body main section.profile ul.different-temps li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #7078c9;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.33px;
+  text-align: center;
+}
+
+html body main section.information-tracking .card-work {
+  width: 327px;
+  height: 160px;
+  background-color: #ff8c66;
+  border-radius: 15px;
+  background-image: url(/images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 0;
+  padding: 0;
+}
+
+html body main section.information-tracking .card-work #data {
+  width: 327px;
+  height: 122px;
+  background-color: #1c204b;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+html body main section.information-tracking .card-work #data #titre-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 279px;
+  height: 22px;
+  margin-bottom: 6px;
+}
+
+html body main section.information-tracking .card-work #data #titre-data p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.33px;
+  margin: 0;
+}
+
+html body main section.information-tracking .card-work #data #data-timeframes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 38px;
+  width: 279px;
+}
+
+html body main section.information-tracking .card-work #data #data-timeframes p:first-child {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 37.92px;
+  margin: 0;
+}
+
+html body main section.information-tracking .card-work #data #data-timeframes p:last-child {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17.78px;
+  text-align: right;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
