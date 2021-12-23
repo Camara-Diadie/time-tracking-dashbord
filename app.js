@@ -1,14 +1,19 @@
 
-// Décommenter pour voir le résultat
-//On crée un objet XMLHttpRequest
-let dataTime = new XMLHttpRequest();
+fetch("data.json")
+  .then((response) => response.json())
 
-//On initialise notre requête avec open()
-dataTime.open("GET", "data.json");
+  .then((data) => {
+    dataJson(data);
+  })
+  .catch((error) => alert("Erreur : " + error));
 
-//On veut une réponse au format JSON
-dataTime.responseType = "json";
+function dataJson(data) {
+  for (let i = 0; i < data.length; i++) {
+    var titre = data[0].title;
+    // console.log(titre);
 
-//On envoie la requête
-dataTime.send();
-console.log(dataTime);
+    var title = document.getElementById("title");
+    title.innerHTML = titre;
+    console.log(data[i]);
+  }
+}
