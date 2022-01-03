@@ -10,7 +10,8 @@ html body {
 
 html body main {
   background: #0f1424;
-  height: 1235px;
+  min-height: 1235px;
+  height: auto;
   width: 375px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,18 +67,19 @@ html body main section.profile .card.report-fort .info-profile .name-report {
           flex-direction: column;
 }
 
-html body main section.profile .card.report-fort .info-profile .name-report p {
+html body main section.profile .card.report-fort .info-profile .name-report h2,
+html body main section.profile .card.report-fort .info-profile .name-report h6 {
   margin: 0;
 }
 
-html body main section.profile .card.report-fort .info-profile .name-report p:first-child {
+html body main section.profile .card.report-fort .info-profile .name-report h2 {
   font-weight: 400;
   font-size: 15px;
   line-height: 17.78px;
   color: #bbc0ff;
 }
 
-html body main section.profile .card.report-fort .info-profile .name-report p:last-child {
+html body main section.profile .card.report-fort .info-profile .name-report h6 {
   font-weight: 300;
   font-size: 24px;
   line-height: 28.44px;
@@ -108,12 +110,10 @@ html body main section.profile ul.different-temps li button {
   text-align: center;
 }
 
-html body main section.information-tracking .card-work {
+html body main section.information-tracking .card {
   width: 327px;
   height: 160px;
-  background-color: #ff8c66;
   border-radius: 15px;
-  background-image: url(/images/icon-work.svg);
   background-repeat: no-repeat;
   background-position: right top;
   display: -webkit-box;
@@ -125,11 +125,36 @@ html body main section.information-tracking .card-work {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  margin: 0;
+  margin-bottom: 24px;
   padding: 0;
 }
 
-html body main section.information-tracking .card-work #data {
+html body main section.information-tracking .card#work {
+  background-color: #ff8c66;
+}
+
+html body main section.information-tracking .card#play {
+  background-color: #56c2e6;
+}
+
+html body main section.information-tracking .card#study {
+  background-color: #ff5c7c;
+}
+
+html body main section.information-tracking .card#exercise {
+  background-color: #4acf81;
+}
+
+html body main section.information-tracking .card#social {
+  background-color: #7536d3;
+}
+
+html body main section.information-tracking .card#self-care {
+  background-color: #f1c65b;
+  margin-bottom: 84px;
+}
+
+html body main section.information-tracking .card .data {
   width: 327px;
   height: 122px;
   background-color: #1c204b;
@@ -150,7 +175,7 @@ html body main section.information-tracking .card-work #data {
   color: white;
 }
 
-html body main section.information-tracking .card-work #data #titre-data {
+html body main section.information-tracking .card .data .titre-data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,14 +190,18 @@ html body main section.information-tracking .card-work #data #titre-data {
   margin-bottom: 6px;
 }
 
-html body main section.information-tracking .card-work #data #titre-data p {
+html body main section.information-tracking .card .data .titre-data p {
   font-weight: 500;
   font-size: 18px;
   line-height: 21.33px;
   margin: 0;
 }
 
-html body main section.information-tracking .card-work #data #data-timeframes {
+html body main section.information-tracking .card .data .titre-data img {
+  cursor: pointer;
+}
+
+html body main section.information-tracking .card .data .data-timeframes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,14 +215,14 @@ html body main section.information-tracking .card-work #data #data-timeframes {
   width: 279px;
 }
 
-html body main section.information-tracking .card-work #data #data-timeframes p:first-child {
+html body main section.information-tracking .card .data .data-timeframes p:first-child {
   font-weight: 300;
   font-size: 32px;
   line-height: 37.92px;
   margin: 0;
 }
 
-html body main section.information-tracking .card-work #data #data-timeframes p:last-child {
+html body main section.information-tracking .card .data .data-timeframes p:last-child {
   font-weight: 400;
   font-size: 15px;
   line-height: 17.78px;

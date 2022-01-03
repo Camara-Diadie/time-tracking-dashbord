@@ -14,11 +14,13 @@ html {
     padding: 0;
     main {
       background: hsl(226, 43%, 10%);
-      height: 1235px;
+      min-height: 1235px;
+      height: auto;
       width: 375px;
       display: flex;
       flex-direction: column;
       align-items: center;
+
       section.profile {
         margin-top: 105px;
         .card.report-fort {
@@ -42,16 +44,17 @@ html {
             .name-report {
               display: flex;
               flex-direction: column;
-              p {
+              h2,
+              h6 {
                 margin: 0;
               }
-              & p:first-child {
+              h2 {
                 font-weight: 400;
                 font-size: 15px;
                 line-height: 17.78px;
                 color: #bbc0ff;
               }
-              & p:last-child {
+              h6 {
                 font-weight: 300;
                 font-size: 24px;
                 line-height: 28.44px;
@@ -82,20 +85,38 @@ html {
         }
       }
       section.information-tracking {
-        .card-work {
+        .card {
           width: 327px;
           height: 160px;
-          background-color: $Light-red-work;
           border-radius: 15px;
-          background-image: url(/images/icon-work.svg);
           background-repeat: no-repeat;
           background-position: right top;
           display: flex;
           align-items: flex-end;
           justify-content: start;
-          margin: 0;
+          margin-bottom: 24px;
           padding: 0;
-          #data {
+          &#work {
+            background-color: $Light-red-work;
+          }
+          &#play {
+            background-color: $Soft-blue-play;
+          }
+          &#study {
+            background-color: $Light-red-study;
+          }
+          &#exercise {
+            background-color: $Lime-green-exercise;
+          }
+          &#social {
+            background-color: $Violet-social;
+          }
+          &#self-care {
+            background-color: $Soft-orange-self-care;
+            margin-bottom: 84px;
+          }
+
+          .data {
             width: 327px;
             height: 122px;
             background-color: #1c204b;
@@ -105,7 +126,7 @@ html {
             align-items: center;
             justify-content: center;
             color: white;
-            #titre-data {
+            .titre-data {
               display: flex;
               justify-content: space-between;
               align-items: center;
@@ -119,8 +140,12 @@ html {
                 line-height: 21.33px;
                 margin: 0;
               }
+
+              img {
+                cursor: pointer;
+              }
             }
-            #data-timeframes {
+            .data-timeframes {
               display: flex;
               justify-content: space-between;
               align-items: center;
