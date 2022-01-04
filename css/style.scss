@@ -7,27 +7,57 @@ $Light-red-study: hsl(348, 100%, 68%);
 $Lime-green-exercise: hsl(145, 58%, 55%);
 $Violet-social: hsl(264, 64%, 52%);
 $Soft-orange-self-care: hsl(43, 84%, 65%);
+
 html {
   font-family: "Rubik", sans-serif;
   body {
-    margin: 0;
-    padding: 0;
-    main {
-      background: hsl(226, 43%, 10%);
-      min-height: 1235px;
+    background: hsl(226, 43%, 10%);
+    min-height: 1235px;
+    height: auto;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: auto;
+      min-width: 768px;
+      min-height: 1024px;
       height: auto;
-      width: 375px;
+    }
+    @media (min-width: 1024px) and (max-width: 1440px) {
+      width: 1440px;
+      min-height: 768px;
+      max-height: auto;
+      flex-direction: row;
+      align-items: center;
+justify-content: center;
+    }
+    main {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      width: auto;
+      height: auto;
+      @media (min-width: 1024px) and (max-width: 1440px) {
+        width: 1110px;
+        height: 518px;
+        flex-direction: row;
+      }
 
       section.profile {
         margin-top: 105px;
+
+        @media (min-width: 1024px) and (max-width: 1440px) {
+          margin: 0;
+        }
         .card.report-fort {
           height: 203px;
           width: 327px;
           background-color: #1c204b;
           border-radius: 15px;
+          @media (min-width: 1024px) and (max-width: 1440px) {
+            width: 255px;
+            height: 518px;
+          }
           .info-profile {
             display: flex;
             align-items: center;
@@ -35,15 +65,30 @@ html {
             height: 133px;
             background-color: $profile-blue;
             border-radius: 15px;
+            @media (min-width: 1024px) and (max-width: 1440px) {
+              height: 354px;
+              width: auto;
+              flex-direction: column;
+              align-items: flex-start;
+              padding-left: 32px;
+            }
             img {
               width: 64px;
               height: 64px;
               border: 3px solid white;
               border-radius: 50px;
+              @media (min-width: 1024px) and (max-width: 1440px) {
+                height: 78px;
+                width: 78px;
+              }
             }
             .name-report {
               display: flex;
               flex-direction: column;
+              @media (min-width: 1024px) and (max-width: 1440px) {
+                height: 139px;
+                width: 116px;
+              }
               h2,
               h6 {
                 margin: 0;
@@ -59,6 +104,10 @@ html {
                 font-size: 24px;
                 line-height: 28.44px;
                 color: #ffff;
+                @media (min-width: 1024px) and (max-width: 1440px) {
+                  font-size: 40px;
+                  line-height: 47.4px;
+                }
               }
             }
           }
@@ -69,11 +118,19 @@ html {
           justify-content: space-around;
           list-style: none;
           margin-top: 24px;
+          @media (min-width: 1024px) and (max-width: 1440px) {
+            flex-direction: column;
+            align-items: flex-start;
+          }
 
           li {
+            @media (min-width: 1024px) and (max-width: 1440px) {
+              margin-top: 17px;
+            }
             button {
               background: none;
               border: none;
+
               cursor: pointer;
               color: #7078c9;
               font-weight: 400;
@@ -85,6 +142,14 @@ html {
         }
       }
       section.information-tracking {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 1024px) and (max-width: 1440px) {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
         .card {
           width: 327px;
           height: 160px;
@@ -96,6 +161,7 @@ html {
           justify-content: start;
           margin-bottom: 24px;
           padding: 0;
+
           &#work {
             background-color: $Light-red-work;
           }
@@ -115,6 +181,10 @@ html {
             background-color: $Soft-orange-self-care;
             margin-bottom: 84px;
           }
+          @media (min-width: 1024px) and (max-width: 1440px) {
+            height: 244px;
+            width: 255px;
+          }
 
           .data {
             width: 327px;
@@ -126,6 +196,15 @@ html {
             align-items: center;
             justify-content: center;
             color: white;
+            @media (min-width: 1024px) and (max-width: 1440px) {
+              height: 199px;
+              width: 255px;
+              align-items: flex-start;
+            }
+            &:hover {
+              background-color: #33397a;
+            }
+
             .titre-data {
               display: flex;
               justify-content: space-between;
@@ -133,7 +212,11 @@ html {
               width: 279px;
               height: 22px;
               margin-bottom: 6px;
-
+              @media (min-width: 1024px) and (max-width: 1440px) {
+                height: 22px;
+                width: 195px;
+                margin: auto;
+              }
               p {
                 font-weight: 500;
                 font-size: 18px;
@@ -147,15 +230,27 @@ html {
             }
             .data-timeframes {
               display: flex;
-              justify-content: space-between;
-              align-items: center;
+              justify-content: space-around;
+              align-items: flex-start;
               height: 38px;
               width: 279px;
+              @media (min-width: 1024px) and (max-width: 1440px) {
+                height: 22px;
+                width: 195px;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+                margin: auto;
+              }
               & p:first-child {
                 font-weight: 300;
                 font-size: 32px;
                 line-height: 37.92px;
                 margin: 0;
+                @media (min-width: 1024px) and (max-width: 1440px) {
+                  font-size: 56px;
+                  margin-bottom: 8px;
+                }
               }
               & p:last-child {
                 font-weight: 400;

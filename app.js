@@ -61,17 +61,17 @@ function dataJson(data) {
     //
 
     daily.addEventListener("click", function () {
-      currents[i].innerHTML = dataCurrentDailly;
+      currents[i].innerHTML = dataCurrentDailly + "hrs";
       previous[i].innerHTML = "Last Week - " + dataPreviousDailly + "hrs";
     });
 
     weekly.addEventListener("click", function () {
-      currents[i].innerHTML = dataCurrentWeekly;
+      currents[i].innerHTML = dataCurrentWeekly + "hrs";
       previous[i].innerHTML = "Last Week - " + dataPreviousWeekly + "hrs";
     });
 
     monthly.addEventListener("click", function () {
-      currents[i].innerHTML = dataCurrentMonthly;
+      currents[i].innerHTML = dataCurrentMonthly + "hrs";
       previous[i].innerHTML = "Last Week - " + dataPreviousMonthly + "hrs";
     });
   }

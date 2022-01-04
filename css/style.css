@@ -4,11 +4,6 @@ html {
 }
 
 html body {
-  margin: 0;
-  padding: 0;
-}
-
-html body main {
   background: #0f1424;
   min-height: 1235px;
   height: auto;
@@ -25,8 +20,64 @@ html body main {
           align-items: center;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  html body {
+    width: auto;
+    min-width: 768px;
+    min-height: 1024px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body {
+    width: 1440px;
+    min-height: 768px;
+    max-height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+html body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  height: auto;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main {
+    width: 1110px;
+    height: 518px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 html body main section.profile {
   margin-top: 105px;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main section.profile {
+    margin: 0;
+  }
 }
 
 html body main section.profile .card.report-fort {
@@ -34,6 +85,13 @@ html body main section.profile .card.report-fort {
   width: 327px;
   background-color: #1c204b;
   border-radius: 15px;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main section.profile .card.report-fort {
+    width: 255px;
+    height: 518px;
+  }
 }
 
 html body main section.profile .card.report-fort .info-profile {
@@ -50,11 +108,33 @@ html body main section.profile .card.report-fort .info-profile {
   border-radius: 15px;
 }
 
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main section.profile .card.report-fort .info-profile {
+    height: 354px;
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 32px;
+  }
+}
+
 html body main section.profile .card.report-fort .info-profile img {
   width: 64px;
   height: 64px;
   border: 3px solid white;
   border-radius: 50px;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main section.profile .card.report-fort .info-profile img {
+    height: 78px;
+    width: 78px;
+  }
 }
 
 html body main section.profile .card.report-fort .info-profile .name-report {
@@ -65,6 +145,13 @@ html body main section.profile .card.report-fort .info-profile .name-report {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main section.profile .card.report-fort .info-profile .name-report {
+    height: 139px;
+    width: 116px;
+  }
 }
 
 html body main section.profile .card.report-fort .info-profile .name-report h2,
@@ -86,6 +173,13 @@ html body main section.profile .card.report-fort .info-profile .name-report h6 {
   color: #ffff;
 }
 
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main section.profile .card.report-fort .info-profile .name-report h6 {
+    font-size: 40px;
+    line-height: 47.4px;
+  }
+}
+
 html body main section.profile ul.different-temps {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,6 +193,24 @@ html body main section.profile ul.different-temps {
   margin-top: 24px;
 }
 
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main section.profile ul.different-temps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main section.profile ul.different-temps li {
+    margin-top: 17px;
+  }
+}
+
 html body main section.profile ul.different-temps li button {
   background: none;
   border: none;
@@ -108,6 +220,29 @@ html body main section.profile ul.different-temps li button {
   font-size: 18px;
   line-height: 21.33px;
   text-align: center;
+}
+
+html body main section.information-tracking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main section.information-tracking {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 html body main section.information-tracking .card {
@@ -154,6 +289,13 @@ html body main section.information-tracking .card#self-care {
   margin-bottom: 84px;
 }
 
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main section.information-tracking .card {
+    height: 244px;
+    width: 255px;
+  }
+}
+
 html body main section.information-tracking .card .data {
   width: 327px;
   height: 122px;
@@ -175,6 +317,20 @@ html body main section.information-tracking .card .data {
   color: white;
 }
 
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main section.information-tracking .card .data {
+    height: 199px;
+    width: 255px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+html body main section.information-tracking .card .data:hover {
+  background-color: #33397a;
+}
+
 html body main section.information-tracking .card .data .titre-data {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,6 +344,14 @@ html body main section.information-tracking .card .data .titre-data {
   width: 279px;
   height: 22px;
   margin-bottom: 6px;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main section.information-tracking .card .data .titre-data {
+    height: 22px;
+    width: 195px;
+    margin: auto;
+  }
 }
 
 html body main section.information-tracking .card .data .titre-data p {
@@ -205,14 +369,30 @@ html body main section.information-tracking .card .data .data-timeframes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   height: 38px;
   width: 279px;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main section.information-tracking .card .data .data-timeframes {
+    height: 22px;
+    width: 195px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: auto;
+  }
 }
 
 html body main section.information-tracking .card .data .data-timeframes p:first-child {
@@ -220,6 +400,13 @@ html body main section.information-tracking .card .data .data-timeframes p:first
   font-size: 32px;
   line-height: 37.92px;
   margin: 0;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main section.information-tracking .card .data .data-timeframes p:first-child {
+    font-size: 56px;
+    margin-bottom: 8px;
+  }
 }
 
 html body main section.information-tracking .card .data .data-timeframes p:last-child {
