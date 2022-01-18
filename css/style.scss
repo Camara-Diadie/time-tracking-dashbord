@@ -23,6 +23,8 @@ html {
       min-width: 768px;
       min-height: 1024px;
       height: auto;
+      align-items: center;
+      justify-content: center;
     }
     @media (min-width: 1024px) and (max-width: 1440px) {
       width: 1440px;
